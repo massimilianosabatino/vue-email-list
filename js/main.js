@@ -6,7 +6,6 @@ createApp({
     data() {
         return {
             mail: [],
-            ready: false,
         }
     },
     created() {
