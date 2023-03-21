@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Email List</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- /Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
     <!-- Axios -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- /Axios -->
 </head>
 <body>
-    <div id="app">
-        <ul v-for="(single, index) in mail">
-            <li v-show="ready">{{ mail[index] }}</li>
-        </ul>
+    <h1>Email addresses from API</h1>
+    <div class="container">
+        <div id="app">
+            <ul>
+                <li v-for="(single, index) in mail" v-show="ready">{{ mail[index] }}</li>
+            </ul>
+        </div>
     </div>
     <!-- Vue.js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

@@ -20,3 +20,6 @@ Far comparire gli indirizzi email solamente quando sono stati tutti generati.
 
 ### Per bonus
 //Creare una condizione che visualizzi la lista solo quando l'array ha raggiunto la dimensione 10
+
+## Features
+- Stile da live coding 🤠
