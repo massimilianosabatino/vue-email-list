@@ -13,7 +13,7 @@
 <body>
     <div id="app">
         <ul v-for="(single, index) in mail">
-            <li>{{ mail[index] }}</li>
+            <li v-show="ready">{{ mail[index] }}</li>
         </ul>
     </div>
     <!-- Vue.js -->

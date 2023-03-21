@@ -6,6 +6,7 @@ createApp({
     data() {
         return {
             mail: [],
+            ready: false,
         }
     },
     created(){
@@ -14,6 +15,12 @@ createApp({
             .then(response => {
                 this.mail.push(response.data.response)
             })
+        }
+    },
+    updated(){
+        console.log(this.mail.length)
+        if(this.mail.length === 10){
+            this.ready = true;
         }
     }
 }).mount('#app');
